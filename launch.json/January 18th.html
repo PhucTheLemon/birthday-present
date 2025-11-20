@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/styles.css">
+    <title>Happy birthday</title>
+</head>
+<body>
+    
+    <div class="box" id="input-screen">
+        <h1>Type in your birthday</h1>
+        <p>(I won't steal your information)</p>
+        
+        <div class="input-wrapper">
+            <input type="date" id="dob-input">
+            <button class="button" id="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <div class="box hidden" id="loading-screen">
+        <h1 class="loading-text">Loading...</h1>
+        <p>(Checking the database)</p>
+        <div class="loader"></div>
+    </div>
+
+    <div class="box error-box hidden" id="error-screen">
+        <h1 class="error-title">🚫 YOU SHALL NOT PASS 🚫</h1>
+        <p class="error-message">How did you even have this page?</p>
+        <button class="button error-button" id="close-error-btn">Try Again</button>
+    </div>
+
+    <div class="box success-box hidden" id="success-screen">
+        <h1 class="success-title">🎉 HAPPY BIRTHDAY! 🎉</h1>
+        <p class="success-message">Happy birthday HUỲNH NGỌC HOA</p>
+        <button class="button success-button" id="continue-btn">Continue</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
